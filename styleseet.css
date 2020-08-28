@@ -1,0 +1,420 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* ここから記述********************************/
+*{
+  box-sizing: border-box;
+  list-style: none;
+}
+/*ヘッダー＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/
+header{
+  width: 100%;
+  height: 50px;
+}
+.template{
+  background-color: black;
+  color: #cccccc;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+.template-list{
+  line-height: 50px;
+}
+.template-list li{
+  display: inline-block;
+  margin-right: 15px;
+}
+.template-left{
+  line-height: 50px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+/*メインの一つ目*******************************/
+#main-1{
+  width: 100%;
+  height: 700px;
+  background-image: url(../img/eyecatch.jpg);
+  background-size: cover;
+  color: #cccccc;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main-1-text{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  font-size: 45px;
+  font-style: italic;
+}
+.main-1-nav{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  width: 1000px;
+  color: #cccccc;
+}
+.main-1-nav-1{
+  width: 80%;
+  background-color: white;
+  color: #000;
+}
+.main-1-nav-1 dl{
+  padding: 10px;
+  line-height: 25px;
+}
+.main-1-nav-1 dd{
+  text-indent: 1em;
+}
+.main-1-nav-2{
+  width: 20%;
+  background-color:black;
+}
+.main-1-nav-2 p{
+  text-align: center;
+  line-height: 70px;
+}
+/*メインの二つ目********************************/
+#main-2{
+  width: 100%;
+  height: 650px;
+}
+.main-2-black{
+  width: 100%;
+  height: 500px;
+  background-color: #000;
+  position: relative;
+}
+.main-2-img img{
+  width: 700px;
+  height: 400px;
+  position: absolute;
+  right: 40px;
+  bottom: -40px;
+}
+.main-2-crad{
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+.main-2-crad h2{
+  line-height: 70px;
+  font-size: 20px;
+}
+.main-2-crad p{
+  line-height: 20px;
+  font-size: 12px;
+}
+button{
+  margin-top: 20px;
+  padding: 5px 20px;
+}
+/*メイン三つ目******************************/
+#main-3{
+  background-color: gainsboro;
+  width: 100%;
+  height: 1100px;
+  color: #000;
+}
+#main-3 img{
+  width: 700px;
+  height: 400px;
+}
+.service-title{
+  text-align: center;
+  padding: 10px 0;
+  font-size: 40px;
+}
+.service-crad-1{
+  width: 100%;
+  position: relative;
+  padding-bottom: 500px;
+}
+.service-crad-1 img{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.crad-1-text{
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  z-index: 100;
+  background-color: white;
+  padding: 50px;
+  font-size: 15px;
+}
+.service-crad-2{
+  width: 100%;
+  position: relative;
+}
+.service-crad-2 img{
+  position: absolute;
+  left: 0;
+}
+.crad-2-text{
+  position: absolute;
+  top: 100px;
+  right: 200px;
+  z-index: 101;
+  background-color: white;
+  padding: 50px;
+  font-size: 15px;
+}
+#main-3 h2{
+  line-height: 40px;
+}
+.p-1{
+  line-height: 40px;
+}
+.p-2{
+  line-height: 20px;
+}
+button{
+  background-color: white;
+}
+/*メイン四つ目//////////////////////*/
+#main-4{
+  width: 100%;
+  padding: 150px 0;
+}
+.company-recruit{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.company{
+  position: relative;
+}
+.company-text{
+ position: absolute;
+ top: 45%;
+ left: 50%;
+ color: white;
+ transform: translate(-50%,-50%);
+ text-align: center;
+}
+.company img{
+  width: 650px;
+}
+.company h1{
+  font-size: 25px;
+  padding: 5px;
+}
+.recruit{
+  position: relative;
+}
+.recruit img{
+  width: 650px;
+}
+.recruit-text{
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.recruit h1{
+  font-size: 25px;
+  padding: 5px;
+}
+.faq{
+  height: 100px;
+  width: 900px;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  line-height: 100px;
+  text-align: center;
+}
+
+.faq h1{
+  width: 10%;
+  padding-left: 20px;
+  font-size: 30px;
+  
+}
+.p-3{
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+.p-3 p{
+  position: absolute;
+  top: 5px;
+  right: 400px;
+
+}
+/*メイン５つ目*******************/
+#main-5{
+  text-align: center;
+  background-image: url(../img/contact-bg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  color: white;
+}
+.contact{
+  padding: 150px 0;
+}
+.h1-2{
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.p-4{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.h1-3{
+  font-size: 35px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.p-5{
+  margin-bottom: 30px;
+}
+.button-2{
+  border: 1px solid white;
+  display: inline-block;
+  padding: 10px 20px;
+}
+/**************フッター*************/
+.footer-end{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px 0 5px 0;
+}
+.template-2{
+  background-color: black;
+  color: #cccccc;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+.template-list-2{
+  line-height: 50px;
+}
+.template-list-2 li{
+  display: inline-block;
+  margin-right: 15px;
+}
+.template-left-2{
+  line-height: 50px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+@media (max-width: 768px){
+  .template-right{
+    display: none;
+  }
+
+}
